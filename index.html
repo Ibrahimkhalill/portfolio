@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ibrahim Khalil</title>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="default.css">
+	<link id="theme-style" rel="stylesheet" type="text/css" href="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	* {box-sizing: border-box}
+	body {font-family: Verdana, sans-serif; margin:0}
+	.mySlides {display: none}
+	img {vertical-align: middle;}
+
+	/* Slideshow container */
+	.slideshow-container {
+	  max-width: 1000px;
+	  position: relative;
+	  margin: auto;
+	}
+
+	
+
+	/* The dots/bullets/indicators */
+	.dot {
+	  cursor: pointer;
+	  height: 15px;
+	  width: 15px;
+	  margin: 0 2px;
+	  background-color: #bbb;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}
+
+	.active, .dot:hover {
+	  background-color: #717171;
+	}
+
+	/* Fading animation */
+	.fade {
+	  -webkit-animation-name: fade;
+	  -webkit-animation-duration: 1.5s;
+	  animation-name: fade;
+	  animation-duration: 1.5s;
+	}
+
+	@-webkit-keyframes fade {
+	  from {opacity: .4} 
+	  to {opacity: 1}
+	}
+
+	@keyframes fade {
+	  from {opacity: .4} 
+	  to {opacity: 1}
+	}
+
+	/* On smaller screens, decrease text size */
+	@media only screen and (max-width: 100px) {
+	  .prev, .next,.text {font-size: 11px}
+	}
+</style>
+</head>
+<body>
+
+	<section class="s1">
+		<div class="main-container">
+			<div class="greeting-wrapper">
+				<h1>Hi, I'm Ibrahim Khalil</h1>
+			</div>
+
+
+			<div class="intro-wrapper">
+				<div class="nav-wrapper">
+
+					<!-- Link around dots-wrapper added after tutorial video -->
+					<a href="index.html">
+						<div class="dots-wrapper">
+							<div id="dot-1" class="browser-dot"></div>
+							<div id="dot-2" class="browser-dot"></div>
+							<div id="dot-3" class="browser-dot"></div>
+						</div>
+					</a>
+					
+
+					<ul id="navigation">
+						<li><a href="index.html#contact">Contact</a></li>
+
+					</ul>
+				</div>
+
+				<div class="left-column">
+					<img id="profile_pic" src="images/ibrahim.jpg">
+					<h5 style="text-align: center;line-height: 0;">Personalize Theme</h5>
+
+					<div id="theme-options-wrapper">
+						<div data-mode="light" id="light-mode" class="theme-dot"></div>
+						<div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+						<div data-mode="green" id="green-mode" class="theme-dot"></div>
+						<div data-mode="purple" id="purple-mode" class="theme-dot"></div>
+					</div>
+
+					<p id="settings-note">*Theme settings will be saved for<br>your next vist</p>
+				</div>
+
+				<div class="right-column">
+
+					<div id="preview-shadow">
+						<div id="preview">
+							<div id="corner-tl" class="corner"></div>
+							<div id="corner-tr" class="corner"></div>
+							<h3>What I Do</h3>
+							<p>I am new devloper, now I enjoying learning courses.</p>
+							<div id="corner-br" class="corner"></div>
+							<div id="corner-bl" class="corner"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="s2">
+		<div class="main-container">
+
+			<div class="about-wrapper">
+				<div class="about-me">
+					<h4>About Me</h4>
+					<p>I am reading in CSE at University of Global Village.</p>
+					<p>I like to build new projects and love to learn.</p>
+
+					<hr>
+
+					<h4>TOP EXPERTISE</h4>
+					<p>Fully Web devloper in Django and aspiring Photographer</p>
+					<div id="skills">
+						<ul>
+							<li>Python</li>
+							<li>Django</li>
+							<li>java</li>
+							<li>C++</li>
+							<li>CSS/HTML</li>
+							
+						</ul>
+
+
+					</div>
+
+				</div>
+
+			<div class="social-links">
+				<div class="slideshow-container">
+                   
+					<div class="mySlides fade">
+					  
+					  <img src="images/ibrahim1.jpg" style="width:400px;height: 400px;">
+					  
+					</div>
+
+					<div class="mySlides fade">
+					 
+					  <img src="images/ibrahim2.jpg" style="width:400px;height: 300px;">
+					
+					</div>
+
+					<div class="mySlides fade">
+					 
+					  <img src="images/ibrahim3.jpg" style="width:400px;height: 400px;">
+					
+					</div>
+
+					<div class="mySlides fade">
+					 
+					  <img src="images/ibrahim4.jpg" style="width:400px;height: 300px;">
+					
+					</div>
+
+					<div class="mySlides fade">
+					 
+					  <img src="images/ibrahim5.jpg" style="width:300px;height: 300px;">
+					
+					</div>
+
+				
+					
+
+					</div>
+					<br>
+					<br>
+					<div style="text-align:center">
+					  <span class="dot" onclick="currentSlide(1)"></span> 
+					  <span class="dot" onclick="currentSlide(2)"></span> 
+					  <span class="dot" onclick="currentSlide(3)"></span> 
+					  <span class="dot" onclick="currentSlide(4)"></span> 
+					   <span class="dot" onclick="currentSlide(5)"></span> 
+					</div>
+
+					
+                    <h3>Find me on Instagram  & Facebook</h3>
+					<a target="_blank" href="https://www.instagram.com/ib.rahim432/">Instagram: @ib.rahim432</a>
+					<br>
+					<a target="_blank" href="https://www.facebook.com/ibrahimkhalil.ibrahimkhalil.900">Facebook: @Ibrahim Khalil</a>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="s1">
+		<div class="main-container">
+			<h3 style="text-align: center;">Some of my  projects</h3>
+
+			<div class="post-wrapper">
+
+				<div>
+					<div class="post">
+						<img class="thumbnail" src="images/p1.png">
+						<div class="post-preview">
+							<h6 class="post-title">Travel Management System</h6>
+							
+							
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<div class="post">
+						<img class="thumbnail" src="images/p2.png">
+						<div class="post-preview">
+							<h6 class="post-title">Online Shopping System</h6>
+							
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<div class="post">
+						<img class="thumbnail" src="images/p3.png">
+						<div class="post-preview">
+							<h6 class="post-title">Weather App</h6>
+				
+							
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="s2">
+		<div class="main-container">
+			<a href=""></a>
+			<h3 style="text-align: center;">Send a Message</h3>
+
+			<form id="contact-form">
+				<a name="contact"></a>
+
+				<label>Name</label>
+				<input class="input-field" type="text" name="name">
+
+				<label>Subject</label>
+				<input class="input-field" type="text" name="subject">
+
+				<label>Email</label>
+				<input class="input-field" type="text" name="email">
+
+				<label>Message</label>
+				<textarea class="input-field" name="message"></textarea>
+
+				<input id="submit-btn" type="submit" value="Send">
+			</form>
+		</div>
+	</section> 
+	<script>
+		var slideIndex = 0;
+		showSlides();
+
+	
+
+		function showSlides() {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  for (i = 0; i < slides.length; i++) {
+		      slides[i].style.display = "none";  
+		  }
+		  slideIndex++;
+		  if(slideIndex>slides.length){slideIndex=1}
+		  for (i = 0; i < dots.length; i++) {
+		      dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		  setTimeout(showSlides,2000);
+		}
+   </script>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
